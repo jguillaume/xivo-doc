@@ -170,9 +170,11 @@ Match reverse fields
 --------------------
 
 The *Match reverse directories* field in :menuselection:`Services --> CTI Server --> Directories --> Definitions`
-should contains the fields that are used by the reverse lookup. The list is comma separated
-and each field that appears in this list must also appear in the *Value* column of the *Mapped Fields*
+should contains the fields that are used by the reverse lookup for search or display.
+The list is comma separated and each field that appears in this list must also appear in the *Value* column of the *Mapped Fields*
 section, or the reverse lookup won't work.
+
+Note that if you search with a global variable, exemple: search, but telephone numbers are returned in specific variables, exemple: mobile and tel, you will also need to create/mapp these specific variables in the *Value* column.
 
 Example::
 
